@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/main.css?v=20260514-theme">
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
@@ -215,7 +215,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2026-05-14 17:00:00 / 修改时间：16:55:42" itemprop="dateCreated datePublished" datetime="2026-05-14T17:00:00+08:00">2026-05-14</time>
+              <time title="创建时间：2026-05-14 17:00:00 / 修改时间：17:10:39" itemprop="dateCreated datePublished" datetime="2026-05-14T17:00:00+08:00">2026-05-14</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -304,6 +304,14 @@
 <li>行内代码增加浅色底纹。</li>
 <li>标题和链接使用更稳重的深色，悬停时使用绿色强调。</li>
 </ul>
+<h2 id="缓存处理"><a href="#缓存处理" class="headerlink" title="缓存处理"></a>缓存处理</h2><p>线上 GitHub Pages 的 HTML 更新后，浏览器可能仍然使用旧的 <code>/css/main.css</code> 缓存，导致内容已经同步但界面样式看起来没有变化。</p>
+<p>本次在主题头部模板中给主样式链接增加版本号：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/css/main.css?v=20260514-theme&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>对应修改位置：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes\next1\layout\_partials\head\head.swig</span><br></pre></td></tr></table></figure>
+
+<p>以后如果再次大改样式，但线上界面没有立刻变化，可以把版本号改成新的日期或编号，然后重新生成并部署。</p>
 <h2 id="以后如何继续修改"><a href="#以后如何继续修改" class="headerlink" title="以后如何继续修改"></a>以后如何继续修改</h2><p>如果只是改颜色、间距、文章卡片样式，优先修改：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source\_data\styles.styl</span><br></pre></td></tr></table></figure>
 
