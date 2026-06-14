@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=20260514-theme">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xiaofan-abc.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ivan&#39;s blog">
+<meta property="og:url" content="https://xiaofan-abc.github.io/index.html">
+<meta property="og:site_name" content="ivan&#39;s blog">
+<meta property="og:description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="ivan">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="学习记录">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://xiaofan-abc.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>ivan's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">ivan's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2026/06/14/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C%E5%9B%9B%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/06/14/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C%E5%9B%9B%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">现代密码学实验四记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2026-06-14 23:30:00 / 修改时间：23:14:22" itemprop="dateCreated datePublished" datetime="2026-06-14T23:30:00+08:00">2026-06-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C/" itemprop="url" rel="index"><span itemprop="name">现代密码学实验</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本次实验围绕 2016 全国高校密码数学挑战赛赛题三展开，目标是从 21 个截获的 RSA 加密帧中恢复完整通关密语，并尽量分析每个 Frame 对应的弱点与明文分片。实验目录位于 <code>E:\1study\现代密码学\RSA加密体制破译题目 (1)(1)\密码挑战赛赛题三</code>。</p>
+<h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><ul>
+<li>操作系统：Windows</li>
+<li>编程语言：Python 3.12</li>
+<li>主要代码：<code>RSA加密体制破译题目 (1)(1)\密码挑战赛赛题三\solve_rsa_challenge3.py</code></li>
+<li>输出结果：<code>RSA加密体制破译题目 (1)(1)\密码挑战赛赛题三\已恢复结果.txt</code></li>
+</ul>
+<h2 id="题目理解"><a href="#题目理解" class="headerlink" title="题目理解"></a>题目理解</h2><p>题目给出一批被截获的 RSA 帧。每个帧文件都由三段 1024 比特十六进制数据拼接而成：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">N | e | c</span><br></pre></td></tr></table></figure>
+
+<p>其中 <code>N</code> 是模数，<code>e</code> 是公钥指数，<code>c</code> 是密文。明文每次最多加密 8 个字符，真实加密前还要填充成 512 比特消息：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">64 比特标志位 || 32 比特通信序号 || 若干 0 || 64 比特 ASCII 分片</span><br></pre></td></tr></table></figure>
+
+<p>因此题目真正的难点不是只恢复 8 个字符，而是要先判断不同 Frame 之间的关系，再恢复每个分片对应的通信序号与文本内容。</p>
+<h2 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h2><p>先读取附件 3-1 的加密样例，确认填充方式和帧格式。之后解析附件 3-2 的全部 21 个 Frame，可以观察到几个明显特征：</p>
+<ol>
+<li><code>Frame0</code> 和 <code>Frame4</code> 的模数相同，但指数不同。</li>
+<li><code>Frame1</code> 和 <code>Frame18</code> 的模数存在非平凡公因子。</li>
+<li><code>Frame3、8、12、16、20</code> 都使用 <code>e = 5</code>。</li>
+<li><code>Frame7、11、15</code> 都使用 <code>e = 3</code>。</li>
+<li>其余很多帧使用 <code>e = 65537</code>。</li>
+</ol>
+<p>这说明题目不是要靠一种方法硬分解全部模数，而是故意混入了多种典型 RSA 弱参数。</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h3 id="1-共模攻击"><a href="#1-共模攻击" class="headerlink" title="1. 共模攻击"></a>1. 共模攻击</h3><p>如果两个密文用相同模数 <code>N</code>、不同且互素的指数 <code>e1, e2</code> 加密同一明文 <code>m</code>，则可利用扩展欧几里得找到：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x*e1 + y*e2 = 1</span><br></pre></td></tr></table></figure>
+
+<p>于是：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">m ≡ c1^x * c2^y mod N</span><br></pre></td></tr></table></figure>
+
+<p>这个方法直接恢复了 <code>Frame0</code> 和 <code>Frame4</code>，得到：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">seq = 0</span><br><span class="line">chunk = My secre</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-共享素因子攻击"><a href="#2-共享素因子攻击" class="headerlink" title="2. 共享素因子攻击"></a>2. 共享素因子攻击</h3><p>如果两个模数共享某个素因子 <code>p</code>，则：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p = gcd(N1, N2)</span><br></pre></td></tr></table></figure>
+
+<p>得到 <code>p</code> 后即可分解两个模数，随后用标准 RSA 私钥公式解密。这个方法恢复了：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Frame1  -&gt; seq 11 -&gt; . Imagin</span><br><span class="line">Frame18 -&gt; seq 10 -&gt; m A to B</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-低指数广播攻击"><a href="#3-低指数广播攻击" class="headerlink" title="3. 低指数广播攻击"></a>3. 低指数广播攻击</h3><p>五个 <code>e = 5</code> 的 Frame 对应的是同一个明文分片在不同模数下的重复发送。此时可以先用中国剩余定理合并，再开整数五次方根：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">c ≡ m^e mod Ni</span><br><span class="line">CRT -&gt; C = m^e</span><br><span class="line">m = iroot(C, e)</span><br></pre></td></tr></table></figure>
+
+<p>恢复结果为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">seq = 1</span><br><span class="line">chunk = t is a f</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-语义重构与逐帧验证"><a href="#4-语义重构与逐帧验证" class="headerlink" title="4. 语义重构与逐帧验证"></a>4. 语义重构与逐帧验证</h3><p>在拿到这些片段后，可以拼出一条很明显的语义线索：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">My secret ...</span><br><span class="line">... Albert Einstein.</span><br><span class="line">... Logic will get you from A to B. Imagination ...</span><br></pre></td></tr></table></figure>
+
+<p>由此可以重构出完整候选明文：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">My secret is a famous saying of Albert Einstein. That is &quot;Logic will get you from A to B. Imagination will take you everywhere.&quot;</span><br></pre></td></tr></table></figure>
+
+<p>但这一步不能只靠“像一句话”就下结论。最终验收方式是：把候选明文切成 8 字节分片，使用同一前缀和序号按题目规则重新填充，再对每个 Frame 重新执行 RSA 加密，只有满足：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pow(m, e, N) == c</span><br></pre></td></tr></table></figure>
+
+<p>才接受该分片匹配。</p>
+<p>实验中恢复出的真实前缀为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0x9876543210ABCDEF</span><br></pre></td></tr></table></figure>
+
+<h2 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\<span class="number">1</span>study\现代密码学</span><br><span class="line">&amp; <span class="string">&#x27;C:\Users\21939\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe&#x27;</span> <span class="string">&#x27;.\RSA加密体制破译题目 (1)(1)\密码挑战赛赛题三\solve_rsa_challenge3.py&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="关键结果"><a href="#关键结果" class="headerlink" title="关键结果"></a>关键结果</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">prefix = 0x9876543210ABCDEF</span><br><span class="line">verified_frames = 21</span><br></pre></td></tr></table></figure>
+
+<p>按通信序号排序后的明文分片如下：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">00 My secre</span><br><span class="line">01 t is a f</span><br><span class="line">02 amous sa</span><br><span class="line">03 ying of</span><br><span class="line">04 Albert E</span><br><span class="line">05 instein.</span><br><span class="line">06  That is</span><br><span class="line">07  &quot;Logic</span><br><span class="line">08 will get</span><br><span class="line">09  you fro</span><br><span class="line">10 m A to B</span><br><span class="line">11 . Imagin</span><br><span class="line">12 ation wi</span><br><span class="line">13 ll take</span><br><span class="line">14 you ever</span><br><span class="line">15 ywhere.&quot;</span><br></pre></td></tr></table></figure>
+
+<p>拼接后的完整通关密语为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">My secret is a famous saying of Albert Einstein. That is &quot;Logic will get you from A to B. Imagination will take you everywhere.&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="遇到的问题与解决"><a href="#遇到的问题与解决" class="headerlink" title="遇到的问题与解决"></a>遇到的问题与解决</h2><p>第一，题目说明了填充结构，但没有直接给出真实标志位。解决方法是先从已成功恢复的明文块反推出固定前缀，最终确认是 <code>0x9876543210ABCDEF</code>。</p>
+<p>第二，不同 Frame 的脆弱点并不一致。解决方法是先做整体分类，再分别尝试共模攻击、<code>gcd</code> 检测和低指数广播攻击，而不是一开始就对所有模数盲目分解。</p>
+<p>第三，后半段片段单看并不能立刻推出完整句子。解决方法是把语义重构作为候选，再用逐帧重新加密验证，这样最后得到的结果是“数学上验证通过”的，而不是单纯依赖语感猜测。</p>
+<h2 id="实验总结"><a href="#实验总结" class="headerlink" title="实验总结"></a>实验总结</h2><p>这个实验很适合作为 RSA 安全性的反例合集。1024 比特模数本身并不意味着万无一失，只要参数生成或使用方式存在问题，例如共模、共享素因子、低指数重复广播，攻击者就能避开通用大整数分解，直接恢复消息。</p>
+<p>通过这次实验，我也更直观地理解了“参数管理”在公钥密码中的重要性。很多攻击并不是因为 RSA 数学公式错了，而是因为实现者在密钥生成、指数选择和消息发送策略上留下了结构性漏洞。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>首届（2016）全国高校密码数学挑战赛赛题三 PDF 与附件数据</li>
+<li>Don Coppersmith, Finding a Small Root of a Univariate Modular Equation, EUROCRYPT 1996</li>
+<li>CSDN：RSA共模攻击原理分析: <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_51999772/article/details/122232114">https://blog.csdn.net/qq_51999772/article/details/122232114</a></li>
+<li>CSDN：RSA低加密指数广播攻击: <a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_73963846/article/details/132921663">https://blog.csdn.net/m0_73963846/article/details/132921663</a></li>
+<li>CSDN：Pollard p-1算法与RSA分解: <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43375921/article/details/119710616">https://blog.csdn.net/qq_43375921/article/details/119710616</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2026/06/07/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C%E4%B8%89%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/06/07/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C%E4%B8%89%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">现代密码学实验三记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2026-06-07 16:30:00 / 修改时间：23:36:39" itemprop="dateCreated datePublished" datetime="2026-06-07T16:30:00+08:00">2026-06-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C/" itemprop="url" rel="index"><span itemprop="name">现代密码学实验</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本次实验完成实验三中的两个 RSA 相关题目：Project Euler Problem 182 和 Cryptopals Set 5 Challenge 39。前者分析 RSA 中未隐藏消息数量最少的公钥指数，后者从零实现一个可运行的 RSA 加解密流程。实验代码和结果文件保存在 <code>E:\1study\现代密码学\实验三</code>。</p>
+<h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><ul>
+<li>操作系统：Windows</li>
+<li>编程语言：Python 3.12</li>
+<li>Question 1 代码：<code>实验三\question1_project_euler_182\project_euler_182.py</code></li>
+<li>Question 2 代码：<code>实验三\question2_cryptopals39\implement_rsa.py</code></li>
+</ul>
+<h2 id="Question-1：Project-Euler-Problem-182"><a href="#Question-1：Project-Euler-Problem-182" class="headerlink" title="Question 1：Project Euler Problem 182"></a>Question 1：Project Euler Problem 182</h2><p>题目来源：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://projecteuler.net/problem=182</span><br><span class="line">http://pe-cn.github.io/182/</span><br></pre></td></tr></table></figure>
+
+<p>题目给定 RSA 模数 <code>n = pq</code>，其中：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p = 1009</span><br><span class="line">q = 3643</span><br></pre></td></tr></table></figure>
+
+<p>要求在所有满足 <code>1 &lt; e &lt; φ(n)</code> 且 <code>gcd(e, φ(n)) = 1</code> 的公钥指数中，找出使未隐藏消息数量最少的所有 <code>e</code>，并求这些 <code>e</code> 的和。</p>
+<p>我的理解是：如果某个消息 <code>m</code> 加密后仍然等于自身，即 <code>m^e ≡ m (mod n)</code>，那么这个消息没有被 RSA 隐藏。题目要找的是“让这种未隐藏消息尽量少”的公钥指数。</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>由于 <code>n = pq</code>，可以分别在模 <code>p</code> 和模 <code>q</code> 下分析，再用中国剩余定理组合。对素数 <code>p</code>，满足：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">m^e ≡ m (mod p)</span><br></pre></td></tr></table></figure>
+
+<p>的解包括 <code>m = 0</code>，以及乘法群中的：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">m^(e-1) ≡ 1 (mod p)</span><br></pre></td></tr></table></figure>
+
+<p>在阶为 <code>p - 1</code> 的循环群中，该方程有 <code>gcd(e - 1, p - 1)</code> 个解。因此模 <code>p</code> 下共有：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcd(e - 1, p - 1) + 1</span><br></pre></td></tr></table></figure>
+
+<p>个未隐藏消息。模 <code>q</code> 同理，所以模 <code>n</code> 下未隐藏消息数量为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(gcd(e - 1, p - 1) + 1) * (gcd(e - 1, q - 1) + 1)</span><br></pre></td></tr></table></figure>
+
+<p>程序枚举所有合法 <code>e</code>，计算上述数量，记录最小值并累加所有达到最小值的 <code>e</code>。</p>
+<h3 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\<span class="number">1</span>study\现代密码学</span><br><span class="line">&amp; <span class="string">&#x27;C:\Users\21939\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe&#x27;</span> .\实验三\question1_project_euler_182\project_euler_182.py</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">p: 1009</span><br><span class="line">q: 3643</span><br><span class="line">phi: 3671136</span><br><span class="line">minimum_unconcealed_messages: 9</span><br><span class="line">number_of_best_e_values: 217800</span><br><span class="line">sum_of_e: 399788195976</span><br></pre></td></tr></table></figure>
+
+<p>结果写入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实验三\question1_project_euler_182\result_project_euler_182.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="Question-2：Implement-RSA"><a href="#Question-2：Implement-RSA" class="headerlink" title="Question 2：Implement RSA"></a>Question 2：Implement RSA</h2><p>题目来源：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.cryptopals.com/sets/5/challenges/39</span><br></pre></td></tr></table></figure>
+
+<p>题目要求实现 RSA：生成公私钥，完成整数消息的加密和解密。实验中使用固定素数保证结果可复现。</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>RSA 的核心步骤如下：</p>
+<ol>
+<li>选择两个素数 <code>p</code> 和 <code>q</code>，计算 <code>n = pq</code>。</li>
+<li>计算欧拉函数 <code>φ(n) = (p - 1)(q - 1)</code>。</li>
+<li>选择公钥指数 <code>e</code>，要求 <code>gcd(e, φ(n)) = 1</code>。</li>
+<li>用扩展欧几里得算法计算私钥指数 <code>d = e^-1 mod φ(n)</code>。</li>
+<li>加密：<code>c = m^e mod n</code>。</li>
+<li>解密：<code>m = c^d mod n</code>。</li>
+</ol>
+<p>本实验使用 Python 的三参数 <code>pow(base, exp, mod)</code> 执行模幂运算，避免先计算巨大整数再取模。</p>
+<h3 id="运行方法-1"><a href="#运行方法-1" class="headerlink" title="运行方法"></a>运行方法</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\<span class="number">1</span>study\现代密码学</span><br><span class="line">&amp; <span class="string">&#x27;C:\Users\21939\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe&#x27;</span> .\实验三\question2_cryptopals39\implement_rsa.py</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">p: 1000037</span><br><span class="line">q: 1000121</span><br><span class="line">n: 1000158004477</span><br><span class="line">e: 3</span><br><span class="line">d: 666770669547</span><br><span class="line">message: hi</span><br><span class="line">message_int: 26729</span><br><span class="line">ciphertext: 93249733426</span><br><span class="line">decrypted: hi</span><br><span class="line">roundtrip_ok: True</span><br></pre></td></tr></table></figure>
+
+<p>结果写入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实验三\question2_cryptopals39\result_cryptopals39.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="遇到的问题与解决"><a href="#遇到的问题与解决" class="headerlink" title="遇到的问题与解决"></a>遇到的问题与解决</h2><p>第一，<code>e</code> 必须和 <code>φ(n)</code> 互素。最初随手选择素数时，<code>e = 3</code> 与 <code>φ(n)</code> 不互素，导致私钥指数不存在。解决方法是换用满足条件的素数对，并在代码中显式检查 <code>gcd(e, φ(n))</code>。</p>
+<p>第二，RSA 直接加密的是整数代表，要求 <code>0 &lt;= m &lt; n</code>。如果明文转换成整数后大于等于 <code>n</code>，就不能直接加密。实验中使用短消息 <code>hi</code> 做演示，保证明文整数小于模数。</p>
+<p>第三，Project Euler 182 如果直接对所有消息逐个验证会非常慢。使用未隐藏消息数量公式后，只需要枚举合法 <code>e</code>，复杂度大幅降低。</p>
+<h2 id="实验总结"><a href="#实验总结" class="headerlink" title="实验总结"></a>实验总结</h2><p>实验三让我把 RSA 的两个侧面联系起来：一方面，RSA 加解密的实现依赖模逆、欧拉函数和快速模幂；另一方面，公钥指数的选择也会影响某些消息是否被真正隐藏。Project Euler 182 不是传统意义上的破译题，但它说明 RSA 参数选择并不只是“能解密”就够，还要关注数学结构带来的特殊消息。</p>
+<p>Cryptopals 39 的实现则提醒我，课本上的 RSA 公式只是核心骨架。真实使用 RSA 时还必须考虑消息编码、padding、随机化和完整性保护，否则即使数学过程正确，也可能留下攻击空间。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>Project Euler Problem 182: <a target="_blank" rel="noopener" href="https://projecteuler.net/problem=182">https://projecteuler.net/problem=182</a></li>
+<li>Project Euler 182 中文页面: <a target="_blank" rel="noopener" href="http://pe-cn.github.io/182/">http://pe-cn.github.io/182/</a></li>
+<li>Cryptopals Set 5 Challenge 39: <a target="_blank" rel="noopener" href="https://www.cryptopals.com/sets/5/challenges/39">https://www.cryptopals.com/sets/5/challenges/39</a></li>
+<li>Python math.gcd 文档: <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/math.html#math.gcd">https://docs.python.org/3/library/math.html#math.gcd</a></li>
+<li>CSDN：RSA Algorithm: <a target="_blank" rel="noopener" href="https://blog.csdn.net/Real_Myth/article/details/52193212">https://blog.csdn.net/Real_Myth/article/details/52193212</a></li>
+<li>CSDN：RSA算法详解: <a target="_blank" rel="noopener" href="https://blog.csdn.net/p_s_p/article/details/118554163">https://blog.csdn.net/p_s_p/article/details/118554163</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2026/06/07/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C%E4%BA%8C%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/06/07/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C%E4%BA%8C%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">现代密码学实验二记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2026-06-07 16:10:00 / 修改时间：23:36:39" itemprop="dateCreated datePublished" datetime="2026-06-07T16:10:00+08:00">2026-06-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C/" itemprop="url" rel="index"><span itemprop="name">现代密码学实验</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本次实验完成实验二文档中的三个高亮题目：MTC3 的 ePassport MRZ 推导 AES 密钥、Cryptopals Set 2 Challenge 14 的随机前缀 ECB 字节恢复攻击、Cryptopals Set 2 Challenge 16 的 CBC bit flipping attack。实验代码和结果文件保存在 <code>E:\1study\现代密码学\实验二</code>。</p>
+<h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><ul>
+<li>操作系统：Windows</li>
+<li>编程语言：Python 3.12</li>
+<li>主要代码目录：<code>实验二</code></li>
+<li>共享模块：<code>实验二\aes_utils.py</code></li>
+</ul>
+<p><code>aes_utils.py</code> 实现了 AES-128 单块加解密、ECB、CBC、PKCS#7 padding 和 unpadding。这样三个实验都可以在不安装第三方库的情况下复现。</p>
+<h2 id="Question-1：MTC3-ePassport-MRZ-推导-AES-密钥"><a href="#Question-1：MTC3-ePassport-MRZ-推导-AES-密钥" class="headerlink" title="Question 1：MTC3 ePassport MRZ 推导 AES 密钥"></a>Question 1：MTC3 ePassport MRZ 推导 AES 密钥</h2><p>题目来源：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.mysterytwisterc3.org/en/challenges/level-2/aes-key--encoded-in-the-machine-readable-zone-of-a-european-epassport</span><br></pre></td></tr></table></figure>
+
+<p>题目给出一段使用 AES-CBC 加密的密文、零 IV，以及一行带缺失字符的护照 MRZ：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12345678&lt;8&lt;&lt;&lt;1110182&lt;111116?&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;4</span><br></pre></td></tr></table></figure>
+
+<p>我的理解是：缺失字符不是直接猜明文，而是 MRZ 中有效期字段的校验位。先按 MRZ 校验位规则恢复这个字符，再用 BAC 相关的密钥派生方式得到 AES 密钥，最后用 CBC 模式解密密文。</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>MRZ 校验位使用权重 <code>7, 3, 1</code> 循环计算。数字取自身值，字母 <code>A-Z</code> 对应 <code>10-35</code>，填充符 <code>&lt;</code> 取 <code>0</code>。字段校验位为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">check_digit = sum(value(ch) * weight[i mod 3]) mod 10</span><br></pre></td></tr></table></figure>
+
+<p>对有效期字段 <code>111116</code> 计算后得到校验位 <code>7</code>，所以完整 MRZ 为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12345678&lt;8&lt;&lt;&lt;1110182&lt;1111167&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;4</span><br></pre></td></tr></table></figure>
+
+<p>用于派生密钥的 MRZ information 取文档号及校验位、出生日期及校验位、有效期及校验位：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MRZ_information = 12345678&lt;811101821111167</span><br></pre></td></tr></table></figure>
+
+<p>密钥派生过程为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Kseed = SHA1(MRZ_information)[0:16]</span><br><span class="line">Kenc  = oddParity(SHA1(Kseed || 00 00 00 01)[0:16])</span><br></pre></td></tr></table></figure>
+
+<p>题目密文使用 AES-CBC 解密，IV 为 16 字节全零，明文末尾使用 <code>01-00</code> padding。</p>
+<h3 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\<span class="number">1</span>study\现代密码学</span><br><span class="line">&amp; <span class="string">&#x27;C:\Users\21939\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe&#x27;</span> .\实验二\question1_mtc3_epassport\decrypt_epassport_mrz.py</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">recovered_mrz: 12345678&lt;8&lt;&lt;&lt;1110182&lt;1111167&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;4</span><br><span class="line">mrz_information: 12345678&lt;811101821111167</span><br><span class="line">kseed: a095f0fdfe51e6ab3bf5c777302c473e</span><br><span class="line">aes_key: ea8645d97ff725a898942aa280c43179</span><br><span class="line">plaintext: Herzlichen Glueckwunsch. Sie haben die Nuss geknackt. Das Codewort lautet: Kryptographie!</span><br></pre></td></tr></table></figure>
+
+<p>结果写入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实验二\question1_mtc3_epassport\result_mtc3_epassport.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="Question-2：Byte-at-a-time-ECB-decryption-Harder"><a href="#Question-2：Byte-at-a-time-ECB-decryption-Harder" class="headerlink" title="Question 2：Byte-at-a-time ECB decryption (Harder)"></a>Question 2：Byte-at-a-time ECB decryption (Harder)</h2><p>题目来源：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.cryptopals.com/sets/2/challenges/14</span><br></pre></td></tr></table></figure>
+
+<p>题目要求在加密 oracle 前面加入未知长度的随机前缀，然后仍然恢复 oracle 追加的未知字符串。相比普通 byte-at-a-time ECB 攻击，难点是攻击者输入不再天然从块边界开始。</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>程序中的 oracle 形式为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AES-ECB(random_prefix || attacker_input || unknown_string, key)</span><br></pre></td></tr></table></figure>
+
+<p>核心步骤如下：</p>
+<ol>
+<li>通过不断增加输入长度，检测密文长度第一次增长的幅度，得到 block size 为 16。</li>
+<li>输入大量相同字节，检查是否出现重复密文块，确认 oracle 使用 ECB。</li>
+<li>构造两块连续相同的 marker，枚举前置填充长度，找到能让 marker 对齐到块边界的位置。</li>
+<li>跳过随机前缀占用的密文块，对未知字符串做字节级字典攻击。</li>
+</ol>
+<p>字典攻击的关键是：当需要恢复第 <code>n</code> 个字节时，先让目标字节落在某个块的最后一位，再枚举 <code>0-255</code>，比较目标块密文是否相等。</p>
+<h3 id="运行方法-1"><a href="#运行方法-1" class="headerlink" title="运行方法"></a>运行方法</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\<span class="number">1</span>study\现代密码学</span><br><span class="line">&amp; <span class="string">&#x27;C:\Users\21939\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe&#x27;</span> .\实验二\question2_cryptopals14\ecb_byte_at_a_time_harder.py</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">actual_random_prefix_length: 12</span><br><span class="line">detected_block_size: 16</span><br><span class="line">ecb_detected: True</span><br><span class="line">alignment_padding_length: 4</span><br><span class="line">prefix_blocks_to_skip: 1</span><br><span class="line">recovered_plaintext:</span><br><span class="line">Rollin&#x27; in my 5.0</span><br><span class="line">With my rag-top down so my hair can blow</span><br><span class="line">The girlies on standby waving just to say hi</span><br><span class="line">Did you stop? No, I just drove by</span><br></pre></td></tr></table></figure>
+
+<p>结果写入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实验二\question2_cryptopals14\result_cryptopals14.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="Question-3：CBC-bit-flipping-attacks"><a href="#Question-3：CBC-bit-flipping-attacks" class="headerlink" title="Question 3：CBC bit flipping attacks"></a>Question 3：CBC bit flipping attacks</h2><p>题目来源：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.cryptopals.com/sets/2/challenges/16</span><br></pre></td></tr></table></figure>
+
+<p>题目给出一个加密接口。接口会把用户输入拼接到固定前缀和后缀之间，并过滤掉 <code>;</code> 和 <code>=</code>。目标是在不知道密钥的情况下构造密文，使解密后的明文包含：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">;admin=true;</span><br></pre></td></tr></table></figure>
+
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><p>CBC 解密时第 <code>i</code> 个明文块满足：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">P_i = D_K(C_i) XOR C_&#123;i-1&#125;</span><br></pre></td></tr></table></figure>
+
+<p>因此攻击者虽然不能直接控制 <code>D_K(C_i)</code>，但可以修改上一块密文 <code>C_&#123;i-1&#125;</code>，从而按位改变下一块明文 <code>P_i</code>。如果原本让受控块是全 <code>A</code>，想把其中某一位改成目标字符 <code>x</code>，只需要修改上一块对应位置：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C_&#123;i-1&#125;[j] = C_&#123;i-1&#125;[j] XOR ord(&#x27;A&#x27;) XOR ord(x)</span><br></pre></td></tr></table></figure>
+
+<p>本实验中固定前缀长度为 32，刚好是两个 AES 块，因此用户输入的 16 个 <code>A</code> 从第三个明文块开始。程序修改第二个密文块，就能把第三个明文块改成 <code>;admin=true;AAAA</code>。</p>
+<h3 id="运行方法-2"><a href="#运行方法-2" class="headerlink" title="运行方法"></a>运行方法</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\<span class="number">1</span>study\现代密码学</span><br><span class="line">&amp; <span class="string">&#x27;C:\Users\21939\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe&#x27;</span> .\实验二\question3_cryptopals16\cbc_bit_flipping_attack.py</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行结果-2"><a href="#运行结果-2" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">prefix_length: 32</span><br><span class="line">block_size: 16</span><br><span class="line">original_is_admin: False</span><br><span class="line">forged_is_admin: True</span><br><span class="line">forged_plaintext_repr: b&#x27;comment1=cooking\xbdO\xa8\xa7\xfdj\t\x8bZ7\xa2\x0e^\xbfw\xfc;admin=true;AAAA;comment2=%20like%20a%20pound%20of%20bacon&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>结果写入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实验二\question3_cryptopals16\result_cryptopals16.txt</span><br></pre></td></tr></table></figure>
+
+<p>可以看到，前一个明文块因为密文翻转被破坏成不可读字节，但目标块成功出现了 <code>;admin=true;</code>，<code>forged_is_admin</code> 也变为 <code>True</code>。</p>
+<h2 id="遇到的问题与解决"><a href="#遇到的问题与解决" class="headerlink" title="遇到的问题与解决"></a>遇到的问题与解决</h2><p>第一，MTC3 题里缺失的 MRZ 字符不能随便枚举，需要先理解 MRZ 校验位规则。解决方法是按 <code>7, 3, 1</code> 权重恢复有效期字段校验位。</p>
+<p>第二，Cryptopals 14 的随机前缀会破坏输入对齐。解决方法是通过两块相同 marker 找到对齐所需的填充长度，并记录需要跳过的前缀密文块数。</p>
+<p>第三，CBC bit flipping 里注入目标字符串会破坏上一块明文，这是 CBC 可塑性的正常副作用。实际判断只要求解密结果中包含 <code>;admin=true;</code>，不要求所有块都保持可读。</p>
+<h2 id="实验总结"><a href="#实验总结" class="headerlink" title="实验总结"></a>实验总结</h2><p>实验二集中体现了分组密码工作模式的安全边界。ECB 的确定性会泄露相同明文块的位置，使得 oracle 场景下可以逐字节恢复未知明文；CBC 本身虽然隐藏了相同明文块，但如果没有完整性校验，密文仍然具有可塑性，可以被攻击者翻转成有意义的控制字段。</p>
+<p>通过这次实验，我更直观地理解了“加密不等于认证”。在真实系统中，单独使用 CBC 或 ECB 都不足以保证安全，必须结合随机 IV、正确 padding 校验和消息认证机制，或者直接使用 AEAD 模式。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>MysteryTwister C3 AES key encoded in ePassport MRZ: <a target="_blank" rel="noopener" href="https://www.mysterytwisterc3.org/en/challenges/level-2/aes-key--encoded-in-the-machine-readable-zone-of-a-european-epassport">https://www.mysterytwisterc3.org/en/challenges/level-2/aes-key--encoded-in-the-machine-readable-zone-of-a-european-epassport</a></li>
+<li>Cryptopals Set 2 Challenge 14: <a target="_blank" rel="noopener" href="https://www.cryptopals.com/sets/2/challenges/14">https://www.cryptopals.com/sets/2/challenges/14</a></li>
+<li>Cryptopals Set 2 Challenge 16: <a target="_blank" rel="noopener" href="https://www.cryptopals.com/sets/2/challenges/16">https://www.cryptopals.com/sets/2/challenges/16</a></li>
+<li>Python hashlib 文档: <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/hashlib.html">https://docs.python.org/3/library/hashlib.html</a></li>
+<li>CSDN：ECB byte-at-a-time: <a target="_blank" rel="noopener" href="https://blog.csdn.net/juli_eyre/article/details/120722335">https://blog.csdn.net/juli_eyre/article/details/120722335</a></li>
+<li>CSDN：CBC mode 实验: <a target="_blank" rel="noopener" href="https://blog.csdn.net/xiewenbonb/article/details/122394672">https://blog.csdn.net/xiewenbonb/article/details/122394672</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2026/05/14/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C%E4%B8%80%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/05/14/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C%E4%B8%80%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">现代密码学实验一记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2026-05-14 18:57:04 / 修改时间：19:02:21" itemprop="dateCreated datePublished" datetime="2026-05-14T18:57:04+08:00">2026-05-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6%E5%AE%9E%E9%AA%8C/" itemprop="url" rel="index"><span itemprop="name">现代密码学实验</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本次实验包含两道题：Cryptopals Set 1 Challenge 6 的 repeating-key XOR 破解，以及 MysteryTwister C3 的 SHA1 哈希口令破解。实验代码和结果文件保存在 <code>https://github.com/xiaofan-abc/code</code>。</p>
+<h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><ul>
+<li>操作系统：Windows</li>
+<li>编程语言：Python</li>
+</ul>
+<h2 id="Question-1：Break-repeating-key-XOR"><a href="#Question-1：Break-repeating-key-XOR" class="headerlink" title="Question 1：Break repeating-key XOR"></a>Question 1：Break repeating-key XOR</h2><p>题目来源：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://www.cryptopals.com/sets/1</span><br><span class="line">https://cryptopals.com/static/challenge-data/6.txt</span><br></pre></td></tr></table></figure>
+
+<p>题目要求破解 repeating-key XOR 加密的密文。密文以 Base64 编码保存，解题目标是恢复密钥并解出英文明文。</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li>读取 Base64 密文并解码为原始字节。</li>
+<li>使用 Hamming distance 估计密钥长度。两个英文文本块在正确密钥长度下分组时，归一化编辑距离通常更小。</li>
+<li>对每个候选 key size，把密文按密钥位置转置。例如 key size 为 29 时，第 0、29、58 等字节都由同一个密钥字节加密。</li>
+<li>每组转置后的字节都转化为 single-byte XOR 问题，用英文频率评分恢复单个密钥字节。</li>
+<li>拼接出完整密钥，再用 repeating-key XOR 解密全文。</li>
+</ol>
+<p>代码中先校验 Cryptopals 给出的 Hamming distance 测试样例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">assert</span> hamming_distance(<span class="string">b&quot;this is a test&quot;</span>, <span class="string">b&quot;wokka wokka!!!&quot;</span>) == <span class="number">37</span></span><br></pre></td></tr></table></figure>
+
+<p>Hamming distance 的实现如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hamming_distance</span>(<span class="params">left: <span class="built_in">bytes</span>, right: <span class="built_in">bytes</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(left) != <span class="built_in">len</span>(right):</span><br><span class="line">        <span class="keyword">raise</span> ValueError(<span class="string">&quot;hamming_distance requires equal-length byte strings&quot;</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sum</span>((a ^ b).bit_count() <span class="keyword">for</span> a, b <span class="keyword">in</span> <span class="built_in">zip</span>(left, right))</span><br></pre></td></tr></table></figure>
+
+<p>恢复密钥时，先按归一化距离选出前若干个候选密钥长度，再对每个长度恢复密钥并用英文频率给明文评分。</p>
+<h3 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\<span class="number">1</span>study\现代密码学\question1_cryptopals</span><br><span class="line">python .\break_repeating_key_xor.py <span class="literal">--download</span></span><br></pre></td></tr></table></figure>
+
+<p><code>--download</code> 用于在 <code>challenge6.txt</code> 不存在时下载题目数据；已有数据文件后也可以省略。</p>
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">key_size: 29</span><br><span class="line">key: Terminator X: Bring the noise</span><br><span class="line">elapsed_seconds: 2.222149</span><br></pre></td></tr></table></figure>
+
+<p>明文开头如下：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">I&#x27;m back and I&#x27;m ringin&#x27; the bell</span><br><span class="line">A rockin&#x27; on the mike while the fly girls yell</span><br><span class="line">In ecstasy in the back of me</span><br><span class="line">Well that&#x27;s my DJ Deshay cuttin&#x27; all them Z&#x27;s</span><br></pre></td></tr></table></figure>
+
+<p>完整结果写入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">E:\1study\现代密码学\question1_cryptopals\result_challenge6.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="Question-2：MTC3-Cracking-SHA1-Hashed-Passwords"><a href="#Question-2：MTC3-Cracking-SHA1-Hashed-Passwords" class="headerlink" title="Question 2：MTC3 Cracking SHA1-Hashed Passwords"></a>Question 2：MTC3 Cracking SHA1-Hashed Passwords</h2><p>题目来源：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.mysterytwisterc3.org/en/challenges/level-2/cracking-sha1-hashed-passwords</span><br></pre></td></tr></table></figure>
+
+<p>目标 SHA1 值为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">67ae1a64661ac8b4494666f58c4822408dd0a3e4</span><br></pre></td></tr></table></figure>
+
+<p>题目给出的线索是键盘指纹。根据德语键盘布局，每个物理按键可能对应未按 Shift 和按下 Shift 的两个字符：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">KEY_OPTIONS = [</span><br><span class="line">    (<span class="string">&quot;Q&quot;</span>, <span class="string">&quot;q&quot;</span>),</span><br><span class="line">    (<span class="string">&quot;W&quot;</span>, <span class="string">&quot;w&quot;</span>),</span><br><span class="line">    (<span class="string">&quot;I&quot;</span>, <span class="string">&quot;i&quot;</span>),</span><br><span class="line">    (<span class="string">&quot;N&quot;</span>, <span class="string">&quot;n&quot;</span>),</span><br><span class="line">    (<span class="string">&quot;5&quot;</span>, <span class="string">&quot;%&quot;</span>),</span><br><span class="line">    (<span class="string">&quot;8&quot;</span>, <span class="string">&quot;(&quot;</span>),</span><br><span class="line">    (<span class="string">&quot;0&quot;</span>, <span class="string">&quot;=&quot;</span>),</span><br><span class="line">    (<span class="string">&quot;+&quot;</span>, <span class="string">&quot;*&quot;</span>),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>共有 8 个物理按键。需要同时考虑：</p>
+<ul>
+<li>8 个按键的所有排列：<code>8!</code></li>
+<li>每个按键是否使用 Shift 字符：<code>2^8</code></li>
+</ul>
+<p>因此搜索空间为：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">8! * 2^8 = 10,321,920</span><br></pre></td></tr></table></figure>
+
+<p>程序枚举所有候选口令，计算其 SHA1，与目标哈希比较：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">sha1_hex</span>(<span class="params">text: <span class="built_in">str</span></span>) -&gt; <span class="built_in">str</span>:</span><br><span class="line">    <span class="keyword">return</span> hashlib.sha1(text.encode(<span class="string">&quot;utf-8&quot;</span>)).hexdigest()</span><br></pre></td></tr></table></figure>
+
+<p>核心枚举逻辑：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> order <span class="keyword">in</span> itertools.permutations(KEY_OPTIONS):</span><br><span class="line">    <span class="keyword">for</span> mask <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span> &lt;&lt; option_count):</span><br><span class="line">        candidate = <span class="string">&quot;&quot;</span>.join(pair[(mask &gt;&gt; index) &amp; <span class="number">1</span>] <span class="keyword">for</span> index, pair <span class="keyword">in</span> <span class="built_in">enumerate</span>(order))</span><br><span class="line">        <span class="keyword">if</span> sha1_hex(candidate) == target_hash:</span><br><span class="line">            <span class="keyword">return</span> candidate</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行方法-1"><a href="#运行方法-1" class="headerlink" title="运行方法"></a>运行方法</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\<span class="number">1</span>study\现代密码学\question2_mtc3</span><br><span class="line">python .\crack_sha1_password.py</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">target_sha1: 67ae1a64661ac8b4494666f58c4822408dd0a3e4</span><br><span class="line">password: (Q=win*5</span><br><span class="line">sha1(password): 67ae1a64661ac8b4494666f58c4822408dd0a3e4</span><br><span class="line">checked_candidates: 6574462</span><br><span class="line">elapsed_seconds: 10.993176</span><br></pre></td></tr></table></figure>
+
+<p>运行截图：</p>
+<p><img src="/images/crypto-ex1/mtc3_run_screenshot.png" alt="MTC3 运行截图"></p>
+<h2 id="遇到的问题与解决"><a href="#遇到的问题与解决" class="headerlink" title="遇到的问题与解决"></a>遇到的问题与解决</h2><h3 id="1-repeating-key-XOR-的-key-size-不能只看一组块"><a href="#1-repeating-key-XOR-的-key-size-不能只看一组块" class="headerlink" title="1. repeating-key XOR 的 key size 不能只看一组块"></a>1. repeating-key XOR 的 key size 不能只看一组块</h3><p>如果只比较前两个块，偶然性较大，容易选到错误的 key size。解决方法是对多个块两两计算 Hamming distance，再求平均归一化距离。</p>
+<h3 id="2-single-byte-XOR-需要评分函数"><a href="#2-single-byte-XOR-需要评分函数" class="headerlink" title="2. single-byte XOR 需要评分函数"></a>2. single-byte XOR 需要评分函数</h3><p>暴力枚举 0 到 255 的密钥字节后，需要判断哪个结果更像英文。实验中使用英文字母频率、空格、常见标点和不可打印字符惩罚构造评分函数。</p>
+<h3 id="3-SHA1-题不能直接暴力所有字符串"><a href="#3-SHA1-题不能直接暴力所有字符串" class="headerlink" title="3. SHA1 题不能直接暴力所有字符串"></a>3. SHA1 题不能直接暴力所有字符串</h3><p>如果对所有字符集做无约束暴力搜索，搜索空间会非常大。题目实际给出了键盘指纹线索，因此应把搜索空间限制在 8 个物理按键及其 Shift 变体上。</p>
+<h2 id="实验总结"><a href="#实验总结" class="headerlink" title="实验总结"></a>实验总结</h2><p>第一题体现了多表异或加密的典型攻击方式：先估计密钥长度，再把问题拆成多个 single-byte XOR。Hamming distance 和英文频率分析是破解 repeating-key XOR 的关键。</p>
+<p>第二题体现了口令破解中“利用上下文线索缩小搜索空间”的重要性。目标哈希本身不可逆，但题目给出键盘指纹后，可以把原本很大的暴力空间缩小到约一千万个候选，并在较短时间内找到口令。</p>
+<p>两道题都说明，密码算法或哈希函数本身可能没有被直接攻破，但弱密钥、可预测口令和额外线索会显著降低攻击难度。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2026/05/14/%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/05/14/%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97/" class="post-title-link" itemprop="url">主题修改日志</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2026-05-14 17:00:00 / 修改时间：17:10:39" itemprop="dateCreated datePublished" datetime="2026-05-14T17:00:00+08:00">2026-05-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%BB%B4%E6%8A%A4/" itemprop="url" rel="index"><span itemprop="name">博客维护</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这篇文章记录本次对博客主题的修改内容，以及以后如何继续调整。</p>
+<h2 id="修改目标"><a href="#修改目标" class="headerlink" title="修改目标"></a>修改目标</h2><p>本次优化的目标是让博客更适合阅读和维护：</p>
+<ul>
+<li>首页布局更清晰。</li>
+<li>文章标题、代码块和正文更容易阅读。</li>
+<li>支持站内搜索。</li>
+<li>阅读长文章时能看到阅读进度。</li>
+<li>代码块可以一键复制。</li>
+</ul>
+<h2 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h2><p>本次主要修改了这些文件：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">themes\next1\_config.yml</span><br><span class="line">source\_data\styles.styl</span><br><span class="line">package.json</span><br><span class="line">package-lock.json</span><br></pre></td></tr></table></figure>
+
+<h2 id="站点配置修改"><a href="#站点配置修改" class="headerlink" title="站点配置修改"></a>站点配置修改</h2><p>在根目录 <code>_config.yml</code> 中，把站点地址从示例地址改成真实的 GitHub Pages 地址：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://xiaofan-abc.github.io</span></span><br></pre></td></tr></table></figure>
+
+<p>这样生成的网页 <code>canonical</code>、分享链接和搜索数据都会指向真实站点。</p>
+<p>同时增加了站点描述和关键词：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">description:</span> <span class="string">&#x27;Ivan 的学习记录、编程笔记和博客维护日志&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">编程</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">学习记录</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="本地搜索"><a href="#本地搜索" class="headerlink" title="本地搜索"></a>本地搜索</h2><p>安装了搜索数据库插件：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-generator-searchdb</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure>
+
+<p>并在 <code>_config.yml</code> 中加入：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.json</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">striptags</span></span><br></pre></td></tr></table></figure>
+
+<p>在 <code>themes\next1\_config.yml</code> 中开启 NexT 本地搜索：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">trigger:</span> <span class="string">auto</span></span><br><span class="line">  <span class="attr">top_n_per_article:</span> <span class="number">3</span></span><br><span class="line">  <span class="attr">preload:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>以后发布后，导航栏会出现搜索入口，可以直接搜索文章标题和正文。</p>
+<h2 id="NexT-布局调整"><a href="#NexT-布局调整" class="headerlink" title="NexT 布局调整"></a>NexT 布局调整</h2><p>主题方案从 <code>Muse</code> 改为 <code>Gemini</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br></pre></td></tr></table></figure>
+
+<p>侧边栏从左侧改到右侧，并在页面中保持显示：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">right</span></span><br><span class="line">  <span class="attr">display:</span> <span class="string">always</span></span><br><span class="line">  <span class="attr">onmobile:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>这样目录、分类、标签等信息更稳定，阅读文章时不用频繁展开侧栏。</p>
+<h2 id="阅读体验调整"><a href="#阅读体验调整" class="headerlink" title="阅读体验调整"></a>阅读体验调整</h2><p>开启了阅读进度条：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">reading_progress:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>开启返回顶部按钮的百分比显示：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">back2top:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>开启阅读书签：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">bookmark:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>开启代码复制按钮：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line">  <span class="attr">copy_button:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">show_result:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>这些功能对写技术笔记比较有用，尤其是代码块较多的文章。</p>
+<h2 id="菜单和社交链接"><a href="#菜单和社交链接" class="headerlink" title="菜单和社交链接"></a>菜单和社交链接</h2><p>导航菜单增加了标签和分类入口：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br></pre></td></tr></table></figure>
+
+<p>侧边栏增加 GitHub 链接：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/xiaofan-abc</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h2><p>没有直接大改主题源码，而是在 <code>source\_data\styles.styl</code> 里写自定义样式，并在 <code>themes\next1\_config.yml</code> 中启用：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+
+<p>本次样式主要做了这些调整：</p>
+<ul>
+<li>页面背景改为浅灰，减少纯白页面的刺眼感。</li>
+<li>文章块增加边框、阴影和 6px 圆角。</li>
+<li>正文行高调整为 <code>1.85</code>，提高中文阅读舒适度。</li>
+<li>行内代码增加浅色底纹。</li>
+<li>标题和链接使用更稳重的深色，悬停时使用绿色强调。</li>
+</ul>
+<h2 id="缓存处理"><a href="#缓存处理" class="headerlink" title="缓存处理"></a>缓存处理</h2><p>线上 GitHub Pages 的 HTML 更新后，浏览器可能仍然使用旧的 <code>/css/main.css</code> 缓存，导致内容已经同步但界面样式看起来没有变化。</p>
+<p>本次在主题头部模板中给主样式链接增加版本号：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/css/main.css?v=20260514-theme&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>对应修改位置：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes\next1\layout\_partials\head\head.swig</span><br></pre></td></tr></table></figure>
+
+<p>以后如果再次大改样式，但线上界面没有立刻变化，可以把版本号改成新的日期或编号，然后重新生成并部署。</p>
+<h2 id="以后如何继续修改"><a href="#以后如何继续修改" class="headerlink" title="以后如何继续修改"></a>以后如何继续修改</h2><p>如果只是改颜色、间距、文章卡片样式，优先修改：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source\_data\styles.styl</span><br></pre></td></tr></table></figure>
+
+<p>如果要开启或关闭 NexT 自带功能，修改：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes\next1\_config.yml</span><br></pre></td></tr></table></figure>
+
+<p>如果要改站点地址、部署仓库、文章链接规则，修改根目录：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br></pre></td></tr></table></figure>
+
+<p>每次修改后用下面命令检查：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm run clean</span><br><span class="line">npm run build</span><br><span class="line">npm run server</span><br></pre></td></tr></table></figure>
+
+<p>确认没问题后再部署：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run deploy</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2026/05/14/Hexo%E7%BB%88%E7%AB%AF%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/05/14/Hexo%E7%BB%88%E7%AB%AF%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/" class="post-title-link" itemprop="url">Hexo 终端操作指南</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2026-05-14 16:55:00 / 修改时间：16:55:42" itemprop="dateCreated datePublished" datetime="2026-05-14T16:55:00+08:00">2026-05-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%BB%B4%E6%8A%A4/" itemprop="url" rel="index"><span itemprop="name">博客维护</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这篇文章记录我维护 Hexo 博客时最常用的终端命令，默认博客目录是 <code>E:\blog</code>。</p>
+<h2 id="进入博客目录"><a href="#进入博客目录" class="headerlink" title="进入博客目录"></a>进入博客目录</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\blog</span><br></pre></td></tr></table></figure>
+
+<p>后面的命令都建议在这个目录里执行。</p>
+<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run server</span><br></pre></td></tr></table></figure>
+
+<p>启动后在浏览器打开终端里显示的地址，通常是：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:4000/</span><br></pre></td></tr></table></figure>
+
+<p>如果改了文章或主题，可以刷新浏览器看效果。预览结束时，在终端按 <code>Ctrl + C</code> 停止服务。</p>
+<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx hexo new <span class="string">&quot;文章标题&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>Hexo 会在 <code>source\_posts</code> 里生成一个 Markdown 文件。文章开头建议保留这样的头部信息：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-05-14 16:55:00</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">分类名</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">标签名</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p><code>title</code> 决定网页标题，<code>date</code> 决定排序时间，<code>categories</code> 和 <code>tags</code> 用来归档。</p>
+<h2 id="清理并生成静态网页"><a href="#清理并生成静态网页" class="headerlink" title="清理并生成静态网页"></a>清理并生成静态网页</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm run clean</span><br><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+
+<p><code>npm run clean</code> 会删除旧的生成结果，<code>npm run build</code> 会把 Markdown 文章生成到 <code>public</code> 文件夹。发布前建议总是先执行这两步。</p>
+<h2 id="发布到-GitHub-Pages"><a href="#发布到-GitHub-Pages" class="headerlink" title="发布到 GitHub Pages"></a>发布到 GitHub Pages</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run deploy</span><br></pre></td></tr></table></figure>
+
+<p>这个命令会把 <code>public</code> 里的静态网页推送到 GitHub Pages 仓库。当前博客配置的发布仓库是：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git@github.com:xiaofan-abc/xiaofan-abc.github.io.git</span><br></pre></td></tr></table></figure>
+
+<p>发布成功后，等待几分钟访问：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://xiaofan-abc.github.io/</span><br></pre></td></tr></table></figure>
+
+<h2 id="推荐发布流程"><a href="#推荐发布流程" class="headerlink" title="推荐发布流程"></a>推荐发布流程</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Location</span> E:\blog</span><br><span class="line">npm run clean</span><br><span class="line">npm run build</span><br><span class="line">npm run deploy</span><br></pre></td></tr></table></figure>
+
+<p>如果只想本地检查，不要执行 <code>npm run deploy</code>。</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="文件夹里有文章，但网页没有显示"><a href="#文件夹里有文章，但网页没有显示" class="headerlink" title="文件夹里有文章，但网页没有显示"></a>文件夹里有文章，但网页没有显示</h3><p>先确认是否重新生成并部署：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm run clean</span><br><span class="line">npm run build</span><br><span class="line">npm run deploy</span><br></pre></td></tr></table></figure>
+
+<p>如果本地 <code>public</code> 里有文章，但线上没有，通常是没有执行部署，或者部署时没有成功推送。</p>
+<h3 id="首页文章标题显示“未命名”"><a href="#首页文章标题显示“未命名”" class="headerlink" title="首页文章标题显示“未命名”"></a>首页文章标题显示“未命名”</h3><p>原因通常是文章缺少 front matter。给文章开头补上：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">正确的文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-05-14 16:55:00</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h3><p>Hexo 建议 Markdown 文件保存为 UTF-8 编码。VS Code 右下角可以查看和修改当前文件编码。</p>
+<h3 id="部署失败"><a href="#部署失败" class="headerlink" title="部署失败"></a>部署失败</h3><p>如果终端提示权限错误，优先检查 GitHub SSH key 是否配置正确：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh <span class="literal">-T</span> git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>如果 SSH 不方便，也可以把 <code>_config.yml</code> 里的仓库地址改成 HTTPS 地址。</p>
+<h2 id="常用命令速查"><a href="#常用命令速查" class="headerlink" title="常用命令速查"></a>常用命令速查</h2><table>
+<thead>
+<tr>
+<th>目的</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>进入博客目录</td>
+<td><code>Set-Location E:\blog</code></td>
+</tr>
+<tr>
+<td>新建文章</td>
+<td><code>npx hexo new &quot;文章标题&quot;</code></td>
+</tr>
+<tr>
+<td>本地预览</td>
+<td><code>npm run server</code></td>
+</tr>
+<tr>
+<td>清理缓存</td>
+<td><code>npm run clean</code></td>
+</tr>
+<tr>
+<td>生成网页</td>
+<td><code>npm run build</code></td>
+</tr>
+<tr>
+<td>发布博客</td>
+<td><code>npm run deploy</code></td>
+</tr>
+<tr>
+<td>检查 SSH</td>
+<td><code>ssh -T git@github.com</code></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2025/04/19/%E8%B0%83%E8%AF%95%E8%AE%B0%E5%BD%95/%E8%B0%83%E8%AF%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/19/%E8%B0%83%E8%AF%95%E8%AE%B0%E5%BD%95/%E8%B0%83%E8%AF%95/" class="post-title-link" itemprop="url">终端中文字符乱码处理</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-19 20:39:51" itemprop="dateCreated datePublished" datetime="2025-04-19T20:39:51+08:00">2025-04-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-05-14 16:53:23" itemprop="dateModified" datetime="2026-05-14T16:53:23+08:00">2026-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%B0%83%E8%AF%95%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">调试记录</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="终端中文字符乱码处理"><a href="#终端中文字符乱码处理" class="headerlink" title="终端中文字符乱码处理"></a>终端中文字符乱码处理</h2><p>在处理这个问题之前，你首先得知道为什么会出现这个这个问题。</p>
+<p>你在使用<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=274801300&content_type=Answer&match_order=1&q=VScode&zhida_source=entity">VScode</a>编辑代码时，代码页面中文正常，而终端输出那里中文却为乱码。</p>
+<p>出现这个现象的原因是因为编码方式的不同。（VScode的默认编码方式为<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=274801300&content_type=Answer&match_order=1&q=UTF-8&zhida_source=entity">UTF-8</a>，中国地区下cmd的编码方式GBK）</p>
+<p>因为VScode终端那里调用的是cmd，两者编码方式的不同的就导致了中文乱码的问题。</p>
+<p>所以我们解决乱码的方式，就是将两者的编码方式统一就行，要么将两者都统一为UTF-8，要么就统一为GBK。（个人建议统一为GBK）</p>
+<h3 id="1，进入设置"><a href="#1，进入设置" class="headerlink" title="1，进入设置"></a>1，进入设置</h3><p><img src="/image/ts1.png"></p>
+<h3 id="2，搜索encoding，修改为encoding为gbk"><a href="#2，搜索encoding，修改为encoding为gbk" class="headerlink" title="2，搜索encoding，修改为encoding为gbk"></a>2，搜索encoding，修改为encoding为gbk</h3><p><img src="/image/%E8%B0%83%E8%AF%952.png"></p>
+<blockquote>
+<p>现在就改好了！</p>
+</blockquote>
+<p>但是当前终端仍然可能输出乱码，可以把当前终端编码改一下</p>
+<p><img src="/image/%E8%B0%83%E8%AF%953.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2025/04/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97%E5%85%A5%E9%97%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E9%98%9F%E5%88%97%E5%85%A5%E9%97%A8/" class="post-title-link" itemprop="url">队列入门</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-19 17:21:57" itemprop="dateCreated datePublished" datetime="2025-04-19T17:21:57+08:00">2025-04-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-05-14 17:14:41" itemprop="dateModified" datetime="2026-05-14T17:14:41+08:00">2026-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><blockquote>
+<p><strong><u>先进先出</u></strong></p>
+</blockquote>
+<p>队列插入在尾部，同时删除从前面开始</p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>empty</td>
+<td>测试队列是否为空，空则返回true</td>
+</tr>
+<tr>
+<td>size</td>
+<td>返回队列元素个数</td>
+</tr>
+<tr>
+<td>front</td>
+<td>返回第一个元素</td>
+</tr>
+<tr>
+<td>back</td>
+<td>返回最后一个元素</td>
+</tr>
+<tr>
+<td>push</td>
+<td>在末尾加入一个新元素</td>
+</tr>
+<tr>
+<td>pop</td>
+<td>删除第一个元素</td>
+</tr>
+<tr>
+<td>emplace</td>
+<td>用于当前后元素上方的队列中插入新元素</td>
+</tr>
+<tr>
+<td>swap</td>
+<td>该函数用于交换参考中两个容器的内容</td>
+</tr>
+</tbody></table>
+<h2 id="实例代码"><a href="#实例代码" class="headerlink" title="实例代码"></a>实例代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">printff</span><span class="params">(queue &lt;<span class="type">int</span>&gt; sg)</span><span class="comment">//输出队列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	queue &lt;<span class="type">int</span>&gt; ss = sg;</span><br><span class="line">	<span class="keyword">while</span> (!ss.<span class="built_in">empty</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; <span class="string">&#x27;\t&#x27;</span> &lt;&lt; ss.<span class="built_in">front</span>();</span><br><span class="line">		ss.<span class="built_in">pop</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	queue &lt;<span class="type">int</span>&gt; k;<span class="comment">//定义队列</span></span><br><span class="line">	k.<span class="built_in">push</span>(<span class="number">10</span>);<span class="comment">//加入元素</span></span><br><span class="line">	k.<span class="built_in">push</span>(<span class="number">20</span>);</span><br><span class="line">	k.<span class="built_in">push</span>(<span class="number">30</span>);</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	int n;</span></span><br><span class="line"><span class="comment">	int a;</span></span><br><span class="line"><span class="comment">	cin&gt;&gt;n;</span></span><br><span class="line"><span class="comment">	for(int i=1;i&lt;=n;i++)</span></span><br><span class="line"><span class="comment">	&#123;</span></span><br><span class="line"><span class="comment">		cin&gt;&gt;a;</span></span><br><span class="line"><span class="comment">		k.push(a);</span></span><br><span class="line"><span class="comment">	&#125;</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;队列k是 : &quot;</span>;</span><br><span class="line">    cout&lt;&lt;k.<span class="built_in">size</span>();</span><br><span class="line">	<span class="built_in">printff</span>(k);</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;\nk.size() : &quot;</span> &lt;&lt; k.<span class="built_in">size</span>();</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;\nk.front() : &quot;</span> &lt;&lt; k.<span class="built_in">front</span>();</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;\nk.back() : &quot;</span> &lt;&lt; k.<span class="built_in">back</span>();</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;\nk.pop() : &quot;</span>;</span><br><span class="line">	k.<span class="built_in">pop</span>();</span><br><span class="line">	<span class="built_in">printff</span>(k);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>输出：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">队列fquiz是 : 	10	20	30</span><br><span class="line"></span><br><span class="line">fquiz.size() : 3</span><br><span class="line">fquiz.front() : 10</span><br><span class="line">fquiz.back() : 30</span><br><span class="line">fquiz.pop() : 	20	30</span><br></pre></td></tr></table></figure>
+
+<h2 id="结构体实现"><a href="#结构体实现" class="headerlink" title="结构体实现"></a>结构体实现</h2><p><strong>代码</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">    <span class="type">int</span> x, y;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">queue&lt;node&gt; que;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    node xx;</span><br><span class="line">    xx.x = <span class="number">1</span>, xx.y = <span class="number">2</span>;</span><br><span class="line">    que.<span class="built_in">push</span>(xx);</span><br><span class="line">    node yy = que.<span class="built_in">front</span>();</span><br><span class="line">    cout &lt;&lt; yy.x &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; yy.y;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2025/04/19/markdown%E5%85%A5%E9%97%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/19/markdown%E5%85%A5%E9%97%A8/" class="post-title-link" itemprop="url">markdown入门</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-19 17:07:18" itemprop="dateCreated datePublished" datetime="2025-04-19T17:07:18+08:00">2025-04-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-05-14 16:53:30" itemprop="dateModified" datetime="2026-05-14T16:53:30+08:00">2026-05-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">写作工具</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="markdown"><a href="#markdown" class="headerlink" title="markdown"></a>markdown</h1><h2 id="一，标题"><a href="#一，标题" class="headerlink" title="一，标题"></a>一，标题</h2><p>标题快捷键：cttrl +1-6</p>
+<p>ctrl + 0 变为普通文本 ctrl +加号&#x2F;减号可以改变级别</p>
+<h2 id="二，段落"><a href="#二，段落" class="headerlink" title="二，段落"></a>二，段落</h2><h3 id="1，换行"><a href="#1，换行" class="headerlink" title="1，换行"></a>1，换行</h3><blockquote>
+<p>你好</p>
+<p>你好</p>
+<p>你好</p>
+</blockquote>
+<blockquote>
+<p>man</p>
+</blockquote>
+<p>段落：&gt;</p>
+<h3 id="2，分割线"><a href="#2，分割线" class="headerlink" title="2，分割线"></a>2，分割线</h3><p>用_ _ _ _</p>
+<hr>
+<h2 id="三，文字显示"><a href="#三，文字显示" class="headerlink" title="三，文字显示"></a>三，文字显示</h2><h3 id="1，字体"><a href="#1，字体" class="headerlink" title="1，字体"></a>1，字体</h3><p>代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">**这是粗体**</span><br><span class="line">~~这是删除线~~</span><br><span class="line">&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">*这是斜体*</span><br><span class="line">==这是高亮==</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>效果：</p>
+<p><strong>这是粗体</strong></p>
+<p><del>这是删除</del></p>
+<p> <u>这是下划线</u></p>
+<p><em>这是斜体</em></p>
+<p>&#x3D;&#x3D;nihk&#x3D;&#x3D;</p>
+<p>快捷键：</p>
+</blockquote>
+<blockquote>
+<p>加粗：ctrl+b</p>
+<p>删除线：shift alt 5</p>
+<p>下划线：ctrl+u</p>
+<p>斜体：ctrl+l </p>
+</blockquote>
+<p>1*2*3</p>
+<p>1\*2</p>
+<h3 id="2-上下标"><a href="#2-上下标" class="headerlink" title="2,上下标"></a>2,上下标</h3><blockquote>
+<p>代码：</p>
+<p>x^2^</p>
+</blockquote>
+<h2 id="四，列表"><a href="#四，列表" class="headerlink" title="四，列表"></a>四，列表</h2><h3 id="1，无序列表"><a href="#1，无序列表" class="headerlink" title="1，无序列表"></a>1，无序列表</h3><p>代码：</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">*/-/+</span><br><span class="line">ctrl +[]改层次</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>你好<ul>
+<li>你<ul>
+<li>好</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2，有序列表"><a href="#2，有序列表" class="headerlink" title="2，有序列表"></a>2，有序列表</h3><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数字+.+空格</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>nihk</li>
+<li>nihk</li>
+<li>ss</li>
+<li>ss</li>
+</ol>
+</blockquote>
+<h3 id="3，任务列表"><a href="#3，任务列表" class="headerlink" title="3，任务列表"></a>3，任务列表</h3><p>代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- [ ]吃早餐</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><input disabled="" type="checkbox"> 吃饭</li>
+<li><input disabled="" type="checkbox"> 睡觉</li>
+<li><input disabled="" type="checkbox"> 六百六十六</li>
+</ul>
+<h2 id="五，区块显示"><a href="#五，区块显示" class="headerlink" title="五，区块显示"></a>五，区块显示</h2><p>代码：</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;+回车</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<blockquote>
+<p>你说得对</p>
+<blockquote>
+<p>但是</p>
+<blockquote>
+<p>你说得对</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="六，代码显示"><a href="#六，代码显示" class="headerlink" title="六，代码显示"></a>六，代码显示</h2><h3 id="1，行内代码"><a href="#1，行内代码" class="headerlink" title="1，行内代码"></a>1，行内代码</h3><blockquote>
+<p>代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`man` ctrl + shift + `</span><br></pre></td></tr></table></figure>
+
+
+
+<p><code>man</code></p>
+</blockquote>
+<h3 id="2-代码块"><a href="#2-代码块" class="headerlink" title="2,代码块"></a>2,代码块</h3><blockquote>
+<p>代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">nihk</span><br><span class="line">nihk</span><br><span class="line">```ctrl + shift + k</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nihk</span><br></pre></td></tr></table></figure></blockquote>
+<h2 id="七，链接"><a href="#七，链接" class="headerlink" title="七，链接"></a>七，链接</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;www.baidu.com</span><br><span class="line">&gt;[baidu](https://www.baidu.com)</span><br><span class="line">&gt;[baidu](https://www.baidu.com&quot;https://www.baidu.com&quot;)</span><br><span class="line">&gt;快捷键ctrl+K</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a><br><a target="_blank" rel="noopener" href="https://www.baidu.com/">baidu</a><br><a target="_blank" rel="noopener" href="https://www.baidu.com"https//www.baidu.com%22">baidu</a></p>
+</blockquote>
+<h2 id="八，脚注"><a href="#八，脚注" class="headerlink" title="八，脚注"></a>八，脚注</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;[^文本]</span><br><span class="line">&gt;[^文本]:解释说明</span><br></pre></td></tr></table></figure>
+
+<p>这是<a href="114514">^1</a></p>
+</blockquote>
+<h2 id="九，图片插入"><a href="#九，图片插入" class="headerlink" title="九，图片插入"></a>九，图片插入</h2><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![不显示的文字](图片路径&quot;图片标题&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>ctrl+shift+I</p>
+</blockquote>
+<h2 id="十，表格"><a href="#十，表格" class="headerlink" title="十，表格"></a>十，表格</h2><blockquote>
+<p>别背了,快捷键ctrl+T</p>
+</blockquote>
+<h2 id="十一-流程图"><a href="#十一-流程图" class="headerlink" title="十一,流程图"></a>十一,流程图</h2><h2 id="十二-表情符号"><a href="#十二-表情符号" class="headerlink" title="十二,表情符号"></a>十二,表情符号</h2><p>快捷键win+句号</p>
+<h2 id="十三，快速截图"><a href="#十三，快速截图" class="headerlink" title="十三，快速截图"></a>十三，快速截图</h2><p>shift+win+s</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xiaofan-abc.github.io/2025/04/15/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ivan">
+      <meta itemprop="description" content="Ivan 的学习记录、编程笔记和博客维护日志">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ivan's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/15/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-15 22:16:55" itemprop="dateCreated datePublished" datetime="2025-04-15T22:16:55+08:00">2025-04-15</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ivan</p>
+  <div class="site-description" itemprop="description">Ivan 的学习记录、编程笔记和博客维护日志</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xiaofan-abc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xiaofan-abc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ivan</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
